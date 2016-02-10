@@ -25,7 +25,7 @@ def write_file(arguments, attacks, file_name='temp.txt'):
     f.write('ATTACKS={')
     for i, att in enumerate(attacks):
         f.write(att)
-        if i != len(arguments) - 1:
+        if i != len(attacks) - 1:
             f.write(',')
     f.write('}\n')
     f.close()
